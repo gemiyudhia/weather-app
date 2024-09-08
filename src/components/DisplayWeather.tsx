@@ -6,7 +6,7 @@ import { optionType } from "./types";
 const DisplayWeather = () => {
   // State untuk menyimpan nama kota
   const [city, setCity] = useState<string>("");
-  const [weather, setWeather] = useState<any>(null); // To store full weather data
+  const [weather, setWeather] = useState<string | null>(null); // To store full weather data
   const [options, setOptions] = useState<[]>([]);
 
   // Fungsi untuk mendapatkan opsi pencarian dari API
